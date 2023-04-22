@@ -5,17 +5,40 @@ class Program
     {
         //Console.WriteLine("Hello, test!");
 
-        int drivingAge = 16;
-        Console.WriteLine("How old are you?");
-        int usersAge = Convert.ToInt32(Console.ReadLine());
+        //int drivingAge = 16;
+        //Console.WriteLine("How old are you?");
+        //int usersAge = Convert.ToInt32(Console.ReadLine());
 
-        if (usersAge >= drivingAge)
+        //if (usersAge >= drivingAge)
+        //{
+        //    Console.WriteLine("You are legally able to drive.");
+        //}
+        //else
+        //{
+        //    Console.WriteLine("You are not old enough to drive yet.");
+        //}
+
+        Random rnd = new Random();
+        int randomNumber = rnd.Next(1, 11);
+
+        //Console.WriteLine(randomNumber);
+
+        if (randomNumber >= 0 && randomNumber <= 2)
         {
-            Console.WriteLine("You are legally able to drive.");
+            Console.WriteLine("0 or 1 or 2.");
         }
+        else if (randomNumber >= 3 && randomNumber <= 5)
+        {
+            Console.WriteLine("3 or 4 or 5.");
+        }
+        else if (randomNumber >= 6 && randomNumber <= 8)
+        {
+            Console.WriteLine("6 or 7 or 8.");
+        }
+        //if (randomNumber >= 9 && randomNumber <= 10)
         else
         {
-            Console.WriteLine("You are not old enough to drive yet.");
+            Console.WriteLine("9 or 10.");
         }
     }
 }
