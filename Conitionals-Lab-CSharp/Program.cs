@@ -18,27 +18,52 @@ class Program
         //    Console.WriteLine("You are not old enough to drive yet.");
         //}
 
-        Random rnd = new Random();
-        int randomNumber = rnd.Next(1, 11);
+        //Random rnd = new Random();
+        //int randomNumber = rnd.Next(1, 11);
 
         //Console.WriteLine(randomNumber);
 
-        if (randomNumber >= 0 && randomNumber <= 2)
+        //if (randomNumber >= 0 && randomNumber <= 2)
+        //{
+        //    Console.WriteLine("0 or 1 or 2.");
+        //}
+        //else if (randomNumber >= 3 && randomNumber <= 5)
+        //{
+        //    Console.WriteLine("3 or 4 or 5.");
+        //}
+        //else if (randomNumber >= 6 && randomNumber <= 8)
+        //{
+        //    Console.WriteLine("6 or 7 or 8.");
+        //}
+        ////if (randomNumber >= 9 && randomNumber <= 10)
+        //else
+        //{
+        //    Console.WriteLine("9 or 10.");
+        //}
+
+        Console.WriteLine("What is your favorite football team?");
+        string favoriteTeam = Console.ReadLine();
+
+
+        if (favoriteTeam == "Vikings")
         {
-            Console.WriteLine("0 or 1 or 2.");
+            Console.WriteLine("Loud noises!");
         }
-        else if (randomNumber >= 3 && randomNumber <= 5)
+        else if (favoriteTeam == "Bears")
         {
-            Console.WriteLine("3 or 4 or 5.");
+            Console.WriteLine("Quarterback much?");
         }
-        else if (randomNumber >= 6 && randomNumber <= 8)
+        else if (favoriteTeam == "Lions")
         {
-            Console.WriteLine("6 or 7 or 8.");
+            Console.WriteLine("LOL! They bad!");
         }
-        //if (randomNumber >= 9 && randomNumber <= 10)
+        else if (favoriteTeam == "Packers")
+        {
+            Console.WriteLine("Best team in the world! Actually, the universe!");
+        }
         else
         {
-            Console.WriteLine("9 or 10.");
+            Console.WriteLine("Pick different team.");
         }
     }
 }
