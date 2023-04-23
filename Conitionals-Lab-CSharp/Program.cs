@@ -43,28 +43,36 @@ class Program
 
         Console.WriteLine("What is your favorite football team?");
         string str = Console.ReadLine();
-        string favoriteTeam = (char.ToUpper(str[0]) + str.Substring(1));
+        while (str.Length >= 1)
+        {
+            string favoriteTeam = (char.ToUpper(str[0]) + str.Substring(1));
 
 
-        if (favoriteTeam == "Vikings")
-        {
-            Console.WriteLine("Loud noises!");
-        }
-        else if (favoriteTeam == "Bears")
-        {
-            Console.WriteLine("Quarterback much?");
-        }
-        else if (favoriteTeam == "Lions")
-        {
-            Console.WriteLine("LOL! They bad!");
-        }
-        else if (favoriteTeam == "Packers")
-        {
-            Console.WriteLine("Best team in the world! Actually, the universe!");
-        }
-        else
-        {
-            Console.WriteLine("Pick different team.");
+            if (favoriteTeam == "Vikings")
+            {
+                Console.WriteLine("Loud noises!");
+                break;
+            }
+            else if (favoriteTeam == "Bears")
+            {
+                Console.WriteLine("Quarterback much?");
+                break;
+            }
+            else if (favoriteTeam == "Lions")
+            {
+                Console.WriteLine("LOL! They bad!");
+                break;
+            }
+            else if (favoriteTeam == "Packers")
+            {
+                Console.WriteLine("Best team in the world! Actually, the universe!");
+                break;
+            }
+            else
+            {
+                Console.WriteLine("Pick different team.");
+                str = Console.ReadLine();
+            }
         }
     }
 }
