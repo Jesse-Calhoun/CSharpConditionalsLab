@@ -42,7 +42,8 @@ class Program
         //}
 
         Console.WriteLine("What is your favorite football team?");
-        string favoriteTeam = Console.ReadLine();
+        string str = Console.ReadLine();
+        string favoriteTeam = (char.ToUpper(str[0]) + str.Substring(1));
 
 
         if (favoriteTeam == "Vikings")
